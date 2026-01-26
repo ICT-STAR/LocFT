@@ -34,3 +34,21 @@ CUDA_VISIBLE_DEVICES=0 python eval_edit_metric.py --data_path ./data/zsre/zsre_e
 **General Task Evaluation**
 
 To evaluate the general capabilities of edited LLMs, we recommend using the [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) for comprehensive assessment. Additionally, we plan to support representative task evaluation based on vllm in the near future.
+
+### Citation
+
+If you have any questions, please feel free to open an issue or contact us. And if you find our work helpful, please cite our paper~
+
+```bibtex
+
+@misc{yang2026finetuningrightmodelediting,
+      title={Fine-tuning Done Right in Model Editing}, 
+      author={Wanli Yang and Fei Sun and Rui Tang and Hongyu Zang and Du Su and Qi Cao and Jingang Wang and Huawei Shen and Xueqi Cheng},
+      year={2026},
+      eprint={2509.22072},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.22072}, 
+}
+
+```
