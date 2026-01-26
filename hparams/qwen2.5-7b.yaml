@@ -1,5 +1,5 @@
 model_name_or_path: "Qwen/Qwen2.5-7B-Instruct"
-data_path: "./zsre/zsre_eval_3k.json"
+data_path: "./data/zsre/zsre_3k.json"
 save_model_dir: "./saves/qwen_zsre3k"
 
 layer: 6
