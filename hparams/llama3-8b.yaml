@@ -1,0 +1,11 @@
+model_name_or_path: "meta-llama/Meta-Llama-3-8B-Instruct"
+data_path: "./data/zsre/zsre_3k.json"
+save_model_dir: "./saves/llama_zsre3k"
+
+layer: 22
+rewrite_module: "model.layers.{}.mlp.down_proj.weight"
+
+lr: 5.0e-4
+batch_size: 100
+num_steps: 25
+device: 1
