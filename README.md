@@ -1,6 +1,6 @@
 # LocFT-BF
 
-This repository hosts the code and data for the paper: **[Fine-tuning Done Right in Model Editing](https://arxiv.org/abs/2509.22072)**.
+This repository hosts the code and data for the paper: **[Fine-tuning Done Right in Model Editing](https://openreview.net/forum?id=cfHuA5jsPt)**.
 
 ### Requirements:
 
