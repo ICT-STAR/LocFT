@@ -193,11 +193,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     # Path & Device
     parser.add_argument('--config_path', type=str, required=True, help="Path to the yaml config file")
+    # two overridable parameters
+    parser.add_argument('--data_path', type=str, default=None, help="Override data path in config")
+    parser.add_argument('--save_model_dir', type=str, default=None, help="Override save dir in config")
     args = parser.parse_args()
 
     # 1. Load Config
     print(f"Loading config from {args.config_path}")
     config = FTHyperParams.from_yaml(args.config_path)
+    
+    if args.data_path:
+        config.data_path = args.data_path
+    if args.save_model_dir:
+        config.save_model_dir = args.save_model_dir
     
     # 2. Load Data
     print(f"Loading data from {config.data_path}")
